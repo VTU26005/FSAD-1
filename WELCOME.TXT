@@ -1,0 +1,12 @@
+Welcome to the fs-react-app project!
+
+This is a React application that has been successfully initialized and pushed to GitHub.
+
+Repository: https://github.com/VTU26005/fs-react-app
+
+Getting Started:
+1. Run 'npm install' to install dependencies
+2. Run 'npm start' to start the development server
+3. Open http://localhost:3000 to view the app in your browser
+
+Happy coding!
