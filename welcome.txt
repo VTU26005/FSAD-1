@@ -1,0 +1,9 @@
+NEWLY CREATED WELCOME FILE
+
+This is a fresh welcome file created for the FSAD-1 project.
+
+Repository: https://github.com/VTU26005/FSAD-1
+
+Welcome to the new beginning!
+
+Created in the new FSAD-1 folder.
