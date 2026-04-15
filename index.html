@@ -92,47 +92,39 @@
             <input type="text" id="textInput" placeholder="Enter some text...">
         </div>
         
-        <button class="btn" onclick="showColorBoxes()">Show Color Boxes</button>
+        <button class="btn" onclick="changeTextBackground()">Change Text Background</button>
         
         <div class="color-boxes" id="colorBoxes"></div>
     </div>
 
     <script>
-        function showColorBoxes() {
-            const colorBoxesContainer = document.getElementById('colorBoxes');
-            const textInput = document.getElementById('textInput').value;
-            
-            // Clear existing boxes
-            colorBoxesContainer.innerHTML = '';
-            
-            // Define colors
+        function changeTextBackground() {
+            const textInput = document.getElementById('textInput');
             const colors = [
-                { name: 'Red', bg: '#ff6b6b' },
-                { name: 'Blue', bg: '#4dabf7' },
-                { name: 'Green', bg: '#51cf66' },
-                { name: 'Yellow', bg: '#ffd43b' },
-                { name: 'Purple', bg: '#9775fa' },
-                { name: 'Orange', bg: '#ff922b' },
-                { name: 'Pink', bg: '#f06595' },
-                { name: 'Teal', bg: '#20c997' },
-                { name: 'Indigo', bg: '#4c6ef5' },
-                { name: 'Gray', bg: '#868e96' }
+                '#ff6b6b', // Red
+                '#4dabf7', // Blue
+                '#51cf66', // Green
+                '#ffd43b', // Yellow
+                '#9775fa', // Purple
+                '#ff922b', // Orange
+                '#f06595', // Pink
+                '#20c997', // Teal
+                '#4c6ef5', // Indigo
+                '#868e96'  // Gray
             ];
             
-            // Create color boxes
-            colors.forEach((color, index) => {
-                const box = document.createElement('div');
-                box.className = 'color-box';
-                box.style.backgroundColor = color.bg;
-                box.textContent = color.name;
-                box.onclick = () => {
-                    alert(`You clicked ${color.name}!${textInput ? ' Text: ' + textInput : ''}`);
-                };
-                colorBoxesContainer.appendChild(box);
-            });
+            // Get a random color
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
             
-            // Show the color boxes container
-            colorBoxesContainer.style.display = 'grid';
+            // Change the text input background
+            textInput.style.backgroundColor = randomColor;
+            
+            // Change text color for better visibility
+            if (randomColor === '#ffd43b' || randomColor === '#868e96') {
+                textInput.style.color = '#000';
+            } else {
+                textInput.style.color = '#fff';
+            }
         }
     </script>
 </body>
