@@ -1,12 +1,7 @@
-Welcome to the fs-react-app project!
+NEWLY CREATED WELCOME FILE
 
-This is a React application that has been successfully initialized and pushed to GitHub.
+This is a fresh welcome file created for the FSAD-1 project.
 
-Repository: https://github.com/VTU26005/fs-react-app
+Repository: https://github.com/VTU26005/FSAD-1
 
-Getting Started:
-1. Run 'npm install' to install dependencies
-2. Run 'npm start' to start the development server
-3. Open http://localhost:3000 to view the app in your browser
-
-Happy coding!
+Welcome to the new beginning!
